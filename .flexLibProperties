@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.lillypad.LpGame"/>
+    <classEntry path="com.lillypad.core.LpDisplayObject"/>
+    <classEntry path="com.lillypad.LpScene"/>
+    <classEntry path="com.lillypad.utils.LpSettingsArray"/>
+    <classEntry path="com.lillypad.LP"/>
+    <classEntry path="com.lillypad.utils.LpSize"/>
+    <classEntry path="com.lillypad.anim.LpTransition"/>
+    <classEntry path="com.lillypad.anim.LpSpriteFrame"/>
+    <classEntry path="com.lillypad.LpSprite"/>
+    <classEntry path="com.lillypad.LpUtils"/>
+    <classEntry path="com.lillypad.anim.LpSpriteAnimation"/>
+    <classEntry path="com.lillypad.transitions.SlideTransition"/>
+    <classEntry path="com.lillypad.transitions.SlideOnTransition"/>
+    <classEntry path="com.lillypad.transitions.SlideOffTransition"/>
+    <classEntry path="com.lillypad.transitions.FadeTransition"/>
+    <classEntry path="com.lillypad.LpSound"/>
+    <classEntry path="com.lillypad.LpSFX"/>
+    <classEntry path="com.lillypad.LpMath"/>
+    <classEntry path="com.lillypad.input.LpKeys"/>
+    <classEntry path="com.lillypad.input.LpKeyboard"/>
+    <classEntry path="com.lillypad.input.LpInputVO"/>
+    <classEntry path="com.lillypad.input.LpMouse"/>
+    <classEntry path="com.lillypad.ui.core.LpComponent"/>
+    <classEntry path="com.lillypad.ui.LpButton"/>
+    <classEntry path="com.lillypad.core.LpBaseScene"/>
+    <classEntry path="com.lillypad.LpHud"/>
+    <classEntry path="com.lillypad.ui.LpLabel"/>
+    <classEntry path="com.lillypad.ui.LpToggleButton"/>
+    <classEntry path="com.lillypad.LpRadioGroup"/>
+    <classEntry path="com.lillypad.LpLibrary"/>
+    <classEntry path="com.lillypad.LpDisplayGroup"/>
+    <classEntry path="com.lillypad.utils.LpConstants"/>
+    <classEntry path="com.lillypad.interfaces.LpStateListener"/>
+    <classEntry path="com.lillypad.LpState"/>
+    <classEntry path="com.lillypad.tmx.TmxTileSet"/>
+    <classEntry path="com.lillypad.tmx.TmxTile"/>
+    <classEntry path="com.lillypad.tmx.TmxTileList"/>
+    <classEntry path="com.lillypad.tmx.TmxLayer"/>
+    <classEntry path="com.lillypad.tmx.TmxTileLayer"/>
+    <classEntry path="com.lillypad.tmx.TmxObject"/>
+    <classEntry path="com.lillypad.tmx.TmxObjectLayer"/>
+    <classEntry path="com.lillypad.tmx.TmxMap"/>
+    <classEntry path="com.lillypad.ui.core.LpBorderedComponent"/>
+    <classEntry path="com.lillypad.core.LpTilableSprite"/>
+    <classEntry path="com.lillypad.ui.core.LpScalableComponent"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
