@@ -12,6 +12,7 @@ package com.lillypad.input
 	 */
 	public class LpKeys
 	{
+		public static const UNDEFINED		:String = "UNDEFINED";
 		public static const BACKSPACE		:String = "BACKSPACE";
 		public static const TAB				:String = "TAB";
 		public static const ENTER			:String = "ENTER";
