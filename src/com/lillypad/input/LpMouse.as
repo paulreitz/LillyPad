@@ -37,6 +37,14 @@ package com.lillypad.input
 			_keys.push(BUTTON_THREE);
 		}
 		
+		protected function getButtonName(index:int):String
+		{
+			if (index >= 0 && index < _keys.length)
+			{
+				return _keys[index];
+			}
+			return BUTTON_ONE;
+		}
 		
 		protected function getButton(key:String):LpInputVO
 		{
@@ -52,6 +60,11 @@ package com.lillypad.input
 		protected function buttonIsSet(key:String):Boolean
 		{
 			return (_buttons[key] && _buttons[key] != undefined);
+		}
+		
+		public function addButton(key:String):void
+		{
+			_keys.push(key);
 		}
 		
 		

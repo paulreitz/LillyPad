@@ -26,109 +26,31 @@ package com.lillypad.input
 		public function LpKeyboard()
 		{
 			_keys = new Array();
-			_keys[LpKeys.BACKSPACE] = new LpInputVO();
-			_keys[LpKeys.TAB] = new LpInputVO();
-			_keys[LpKeys.ENTER] = new LpInputVO();
-			_keys[LpKeys.COMMAND] = new LpInputVO();
-			_keys[LpKeys.SHIFT] = new LpInputVO();
-			_keys[LpKeys.CONTROL] = new LpInputVO();
-			_keys[LpKeys.ALTERNATE] = new LpInputVO();
-			_keys[LpKeys.CAPS_LOCK] = new LpInputVO();
-			_keys[LpKeys.ESCAPE] = new LpInputVO();
-			_keys[LpKeys.SPACE] = new LpInputVO();
-			_keys[LpKeys.PAGE_UP] = new LpInputVO();
-			_keys[LpKeys.PAGE_DOWN] = new LpInputVO();
-			_keys[LpKeys.END] = new LpInputVO();
-			_keys[LpKeys.HOME] = new LpInputVO();
-			_keys[LpKeys.LEFT] = new LpInputVO();
-			_keys[LpKeys.UP] = new LpInputVO();
-			_keys[LpKeys.RIGHT] = new LpInputVO();
-			_keys[LpKeys.DOWN] = new LpInputVO();
-			_keys[LpKeys.INSERT] = new LpInputVO();
-			_keys[LpKeys.DELETE] = new LpInputVO();
-			_keys[LpKeys.NUMBER_0] = new LpInputVO();
-			_keys[LpKeys.NUMBER_1] = new LpInputVO();
-			_keys[LpKeys.NUMBER_2] = new LpInputVO();
-			_keys[LpKeys.NUMBER_3] = new LpInputVO();
-			_keys[LpKeys.NUMBER_4] = new LpInputVO();
-			_keys[LpKeys.NUMBER_5] = new LpInputVO();
-			_keys[LpKeys.NUMBER_6] = new LpInputVO();
-			_keys[LpKeys.NUMBER_7] = new LpInputVO();
-			_keys[LpKeys.NUMBER_8] = new LpInputVO();
-			_keys[LpKeys.NUMBER_9] = new LpInputVO();
-			_keys[LpKeys.A] = new LpInputVO();
-			_keys[LpKeys.B] = new LpInputVO();
-			_keys[LpKeys.C] = new LpInputVO();
-			_keys[LpKeys.D] = new LpInputVO();
-			_keys[LpKeys.E] = new LpInputVO();
-			_keys[LpKeys.F] = new LpInputVO();
-			_keys[LpKeys.G] = new LpInputVO();
-			_keys[LpKeys.H] = new LpInputVO();
-			_keys[LpKeys.I] = new LpInputVO();
-			_keys[LpKeys.J] = new LpInputVO();
-			_keys[LpKeys.K] = new LpInputVO();
-			_keys[LpKeys.L] = new LpInputVO();
-			_keys[LpKeys.M] = new LpInputVO();
-			_keys[LpKeys.N] = new LpInputVO();
-			_keys[LpKeys.O] = new LpInputVO();
-			_keys[LpKeys.P] = new LpInputVO();
-			_keys[LpKeys.Q] = new LpInputVO();
-			_keys[LpKeys.R] = new LpInputVO();
-			_keys[LpKeys.S] = new LpInputVO();
-			_keys[LpKeys.T] = new LpInputVO();
-			_keys[LpKeys.U] = new LpInputVO();
-			_keys[LpKeys.V] = new LpInputVO();
-			_keys[LpKeys.W] = new LpInputVO();
-			_keys[LpKeys.X] = new LpInputVO();
-			_keys[LpKeys.Y] = new LpInputVO();
-			_keys[LpKeys.Z] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_0] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_1] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_2] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_3] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_4] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_5] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_6] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_7] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_8] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_9] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_MULTIPLY] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_PLUS] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_ENTER] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_MINUS] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_DECIMAL] = new LpInputVO();
-			_keys[LpKeys.NUMPAD_DIVIDE] = new LpInputVO();
-			_keys[LpKeys.F1] = new LpInputVO();
-			_keys[LpKeys.F2] = new LpInputVO();
-			_keys[LpKeys.F3] = new LpInputVO();
-			_keys[LpKeys.F4] = new LpInputVO();
-			_keys[LpKeys.F5] = new LpInputVO();
-			_keys[LpKeys.F6] = new LpInputVO();
-			_keys[LpKeys.F7] = new LpInputVO();
-			_keys[LpKeys.F8] = new LpInputVO();
-			_keys[LpKeys.F9] = new LpInputVO();
-			_keys[LpKeys.F10] = new LpInputVO();
-			_keys[LpKeys.F11] = new LpInputVO();
-			_keys[LpKeys.F12] = new LpInputVO();
-			_keys[LpKeys.F13] = new LpInputVO();
-			_keys[LpKeys.F14] = new LpInputVO();
-			_keys[LpKeys.F15] = new LpInputVO();
-			_keys[LpKeys.SEMICOLON] = new LpInputVO();
-			_keys[LpKeys.EQUAL] = new LpInputVO();
-			_keys[LpKeys.COMMA] = new LpInputVO();
-			_keys[LpKeys.MINUS] = new LpInputVO();
-			_keys[LpKeys.PERIOD] = new LpInputVO();
-			_keys[LpKeys.SLASH] = new LpInputVO();
-			_keys[LpKeys.BACKQUOTE] = new LpInputVO();
-			_keys[LpKeys.LEFT_BRACKET] = new LpInputVO();
-			_keys[LpKeys.BACK_SLASH] = new LpInputVO();
-			_keys[LpKeys.RIGHT_BRACKET] = new LpInputVO();
-			_keys[LpKeys.QUOTE] = new LpInputVO();
-			
 			_sets = new Array();
 			
 			_lastDown = -1;
 			_lastUp = -1;
+		}
+		
+		protected function getKey(key:String):LpInputVO
+		{
+			if (_keys[key] && _keys[key] != undefined)
+			{
+				return _keys[key] as LpInputVO;
+			}
+			var input:LpInputVO = new LpInputVO();
+			_keys[key] = input;
+			return input;
+		}
+		
+		protected function keyIsSet(key:String):Boolean
+		{
+			return (_keys[key] && _keys[key] != undefined);
+		}
+		
+		protected function setExists(key:String):Boolean
+		{
+			return (_sets[key] && _sets[key] != undefined);
 		}
 		
 		
@@ -158,7 +80,7 @@ package com.lillypad.input
 		{
 			for (var name:String in _keys) 
 			{
-				(_keys[name] as LpInputVO).update();
+				getKey(name).update();
 			}
 			
 		} // END FUNCTION update
