@@ -12,6 +12,9 @@ package com.lillypad.input
 	 */
 	public class LpInputVO
 	{
+		public static const INPUT_DOWN:int = 2;
+		public static const INPUT_UP:int = -1;
+		
 		protected var _value:int;
 		
 		
@@ -60,13 +63,8 @@ package com.lillypad.input
 		public function set value(nValue:int):void
 		{
 			if (_value > 0 && nValue == 2) 
-			{
-				
-			}
-			else
-			{
-				_value = nValue;
-			} // END IF
+				return;
+			_value = nValue;
 		} // END SET value
 		
 		

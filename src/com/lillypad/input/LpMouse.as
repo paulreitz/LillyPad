@@ -13,7 +13,12 @@ package com.lillypad.input
 	 */
 	public class LpMouse
 	{
-		protected var _mouseInput:LpInputVO;
+		public static const BUTTON_ONE:String = "LpMouse.buttonOne";
+		public static const BUTTON_TWO:String = "LpMouse.buttonTwo";
+		public static const BUTTON_THREE:String = "LpMouse.buttonThree";
+		
+		protected var _buttons:Array;
+		protected var _keys:Vector.<String>;
 		protected var _x:Number;
 		protected var _y:Number;
 		
@@ -24,9 +29,30 @@ package com.lillypad.input
 		
 		public function LpMouse()
 		{
-			_mouseInput = new LpInputVO();
+			_buttons = new Array();
+			_keys = new Vector.<String>();
+			
+			_keys.push(BUTTON_ONE);
+			_keys.push(BUTTON_TWO);
+			_keys.push(BUTTON_THREE);
 		}
 		
+		
+		protected function getButton(key:String):LpInputVO
+		{
+			if (_buttons[key])
+			{
+				return _buttons[key] as LpInputVO;
+			}
+			var input:LpInputVO = new LpInputVO;
+			_buttons[key] = input;
+			return input;
+		}
+		
+		protected function buttonIsSet(key:String):Boolean
+		{
+			return (_buttons[key] && _buttons[key] != undefined);
+		}
 		
 		
 		//******************************************************
@@ -36,9 +62,9 @@ package com.lillypad.input
 		 * 
 		 * @param	param1	Describe param1 here.
 		 */
-		public function mouseDown():void
+		public function mouseDown(key:String = BUTTON_ONE):void
 		{
-			_mouseInput.value = 2;
+			getButton(key).value = LpInputVO.INPUT_DOWN;
 		} // END FUNCTION mouseDown
 		
 		
@@ -50,9 +76,9 @@ package com.lillypad.input
 		 * 
 		 * @param	param1	Describe param1 here.
 		 */
-		public function mouseUp():void
+		public function mouseUp(key:String = BUTTON_ONE):void
 		{
-			_mouseInput.value = -1;
+			getButton(key).value = LpInputVO.INPUT_UP;
 		} // END FUNCTION mouseUp
 		
 		
@@ -65,9 +91,13 @@ package com.lillypad.input
 		 *
 		 * @return	The .
 		 */
-		public function get justPressed():Boolean
+		public function justPressed(key:String = BUTTON_ONE):Boolean
 		{
-			return _mouseInput.justPressed;
+			if (buttonIsSet(key))
+			{
+				return getButton(key).justPressed;
+			}
+			return false;
 		} // END GET justPressed
 		
 		
@@ -80,9 +110,12 @@ package com.lillypad.input
 		 *
 		 * @return	The .
 		 */
-		public function get justReleased():Boolean
+		public function justReleased(key:String = BUTTON_ONE):Boolean
 		{
-			return _mouseInput.justReleased;
+			if (buttonIsSet(key))
+			{
+				return getButton(key).justReleased;
+			}
 		} // END GET justReleased
 		
 		
@@ -95,9 +128,13 @@ package com.lillypad.input
 		 *
 		 * @return	The .
 		 */
-		public function get isDown():Boolean
+		public function isDown(key:String = BUTTON_ONE):Boolean
 		{
-			return _mouseInput.down;
+			if (buttonIsSet(key))
+			{
+				return getButton(key).down;
+			}
+			return false;
 		} // END GET isDown
 		
 		
@@ -142,7 +179,10 @@ package com.lillypad.input
 		{
 			_x = nX;
 			_y = nY;
-			_mouseInput.update();
+			for each(key:String in _buttons)
+			{
+				getButton(key).update();
+			}
 		} // END FUNCTION update
 		
 		
